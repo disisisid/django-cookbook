@@ -27,3 +27,10 @@ suites:
       inspec_tests:
         - test/integration/default
     attributes:
+  - name: install_virtualenv
+    run_list:
+      - recipe[django-cookbook::install_virtualenv]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
