@@ -25,12 +25,12 @@ suites:
       - recipe[django-cookbook::install_pip]
     verifier:
       inspec_tests:
-        - test/integration/default
+        - test/integration/pip
     attributes:
   - name: install_virtualenv
     run_list:
       - recipe[django-cookbook::install_virtualenv]
     verifier:
       inspec_tests:
-        - test/integration/default
+        - test/integration/virtualenv
     attributes:
